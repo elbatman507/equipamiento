@@ -1,0 +1,2 @@
+# equipamiento
+ventas dequipos 
