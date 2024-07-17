@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+        <div class="carrito">
+            <span class="carrito-icono">🛒 Carrito de compra</span>
+            <div id="carrito_contenido"></div>
+        </div>
+
+    <!-- PRODUCTOS-->    
+    <section>
+        <h2 class="productos_titulo">SUETER TACTICOS</h2>
+        <div class="productos_cuadro">
+            <div class="productos_descripcion">
+                <div class="producto">
+                    <img class="producto" src="imagenes/sueter.jpg" data-title="Suéter Under Armour Tactical 1/4 Zip" data-description="Suéter con cremallera de 1/4, fabricado con materiales que absorben la humedad y proporcionan comodidad y calidez." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/sueter2.jpg" data-title="Suéter 5.11 Tactical Rapid Assault Shirt" data-description="Diseñado para operaciones tácticas, con un cuerpo principal de tela elástica y mangas reforzadas." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/sueter3.jpg" data-title="Suéter Condor Tactical Fleece Pullover" data-description="Suéter de forro polar con bolsillos tácticos y cremalleras reforzadas, ideal para climas fríos." data-price="$950.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/sueter4.jpg" data-title="Suéter Tru-Spec 1/4 Zip Tactical Response Combat Shirt" data-description="Suéter con cremallera de 1/4 y un diseño ergonómico, ideal para situaciones tácticas y de combate." data-price="$980.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/sueter5.jpg" data-title="Suéter Rothco Spec Ops Tactical Fleece" data-description="Fabricado con forro polar de alta calidad, con múltiples bolsillos y un diseño táctico para mayor funcionalidad en operaciones." data-price="$1000.00" onmouseover="cambiarContenido(this)">
+                </div>
+                <img id="arma_principal" class="arma_principal" src="imagenes/sueter.jpg">
+                <div class="descripcion">
+                    <h3 id="producto_titulo">Sueter Tacticos</h3>
+                    <p id="producto_descripcion">Nuestro suéter táctico militar es la elección perfecta para aquellos que buscan una prenda versátil y resistente. Diseñado con los más altos estándares de calidad, este suéter está confeccionado con materiales duraderos que garantizan su resistencia y comodidad en cualquier situación.</p>
+                    <h2 id="producto_precio">$XX.XX</h2>
+                    <div>
+                        <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
+                        <label for="confirmar_compra">Deseo comprar este producto</label>
+                    </div>
+                    <button id="comprar_boton" onclick="redirigirCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

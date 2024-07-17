@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+
+        <div class="carrito">
+            <span class="carrito-icono">🛒 Carrito de compra</span>
+            <div id="carrito_contenido"></div>
+        </div>
+
+    <!-- PRODUCTOS-->    
+    <section>
+        <h2 class="productos_titulo">Botas Kakis</h2>
+        <div class="productos_cuadro">
+            <div class="productos_descripcion">
+                <div class="producto">
+                    <img class="producto" src="imagenes/botaskaki1.jpg" data-title="Botas Militares Tactical Research TR550 Khyber II" data-description="Botas ligeras y resistentes, diseñadas para un rendimiento óptimo en terrenos rocosos. Su suela Vibram ofrece un excelente agarre y durabilidad." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/botaskaki2.jpg" data-title="Botas Belleville One Xero 320 Desert Tan" data-description="Fabricadas con materiales ultraligeros, estas botas están diseñadas para ofrecer la máxima movilidad y comodidad. Ideales para climas cálidos y secos." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/botaskaki3.jpg" data-title="Botas Oakley SI Light Assault Boot 2" data-description="Estas botas son conocidas por su ligereza y transpirabilidad. Cuentan con una suela exterior de goma antideslizante y una estructura de microfibra y nylon para mayor durabilidad." data-price="$950.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/botaskaki4.jpg" data-title="Botas Under Armour Valsetz RTS 1.5" data-description="Botas tácticas con tecnología ClutchFit, que proporciona soporte y comodidad. La suela de goma y la plantilla Ortholite garantizan tracción y confort." data-price="$980.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/botaskaki5.jpg" data-title="Botas 5.11 ATAC 2.0 8 Desert" data-description="Equipadas con una cremallera lateral para facilitar el calzado y descalzado, estas botas ofrecen comodidad y durabilidad. La entresuela Ortholite garantiza amortiguación y soporte." data-price="$1000.00" onmouseover="cambiarContenido(this)">
+                </div>
+                <img id="arma_principal" class="arma_principal" src="imagenes/botaskaki1.jpg">
+                <div class="descripcion">
+                    <h3 id="producto_titulo">Botas Kakis</h3>
+                    <p id="producto_descripcion">Las Kaki son una prenda de vestir icónica y versátil que se ha convertido en un básico en el armario de hombres y mujeres. Estas pantalones, con su característico tono kaki, combinan estilo y funcionalidad para brindar comodidad y un aspecto moderno.</p>
+                    <h2 id="producto_precio">$XX.XX</h2>
+                    <div>
+                        <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
+                        <label for="confirmar_compra">Deseo comprar este producto</label>
+                    </div>
+                    <button id="comprar_boton" onclick="redirigirCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

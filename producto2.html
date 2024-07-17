@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+        <div class="carrito">
+            <span class="carrito-icono">🛒 Carrito de compra</span>
+            <div id="carrito_contenido"></div>
+        </div>
+
+    <!-- PRODUCTOS-->    
+    <section>
+        <h2 class="productos_titulo">CASCOS TACTICOS</h2>
+        <div class="productos_cuadro">
+            <div class="productos_descripcion">
+                <div class="producto">
+                    <img class="producto" src="imagenes/casco1.jpg" data-title="Casco Ops-Core FAST MT" data-description="Casco ligero y modular, diseñado para operaciones especiales. Ofrece protección balística y puede integrar accesorios de comunicación y visión nocturna." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/casco2.jpg" data-title="Casco MICH (Modular Integrated Communications Helmet)" data-description="Casco balístico estándar del ejército estadounidense, diseñado para ser compatible con equipos de comunicación y protección adicional." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/casco3.jpg" data-title="Casco Team Wendy EXFIL Ballistic" data-description="Casco balístico avanzado con un diseño ergonómico y sistema de suspensión ajustable para mayor comodidad y protección." data-price="$950.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/casco4.jpg" data-title="Casco PASGT (Personal Armor System for Ground Troops)" data-description="Casco balístico tradicional utilizado por las fuerzas armadas. Ofrece protección básica contra fragmentos y proyectiles." data-price="$980.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/casco5.jpg" data-title="Casco ACH (Advanced Combat Helmet)" data-description="Casco de combate avanzado, diseñado para proporcionar mayor protección balística y reducción de peso en comparación con los cascos tradicionales." data-price="$1000.00" onmouseover="cambiarContenido(this)">
+                </div>
+                <img id="arma_principal" class="arma_principal" src="imagenes/casco.jpg">
+                <div class="descripcion">
+                    <h3 id="producto_titulo">Cascos Tacticos</h3>
+                    <p id="producto_descripcion">Cascos Tacticos fabricados con materiales resistentes y duraderos, el casco táctico ofrece una excelente protección contra impactos y fragmentos de proyectiles. Su diseño robusto y ergonómico se adapta cómodamente a la cabeza del usuario, brindando una sensación de seguridad y confianza.</p>
+                    <h2 id="producto_precio">$XX.XX</h2>
+                    <div>
+                        <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
+                        <label for="confirmar_compra">Deseo comprar este producto</label>
+                    </div>
+                    <button id="comprar_boton" onclick="redirigirCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

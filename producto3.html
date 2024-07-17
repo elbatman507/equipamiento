@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+
+        <div class="carrito">
+            <span class="carrito-icono">🛒 Carrito de compra</span>
+            <div id="carrito_contenido"></div>
+        </div>
+
+    <!-- PRODUCTOS-->    
+    <section>
+        <h2 class="productos_titulo">PISTOLAS GLOCK</h2>
+        <div class="productos_cuadro">
+            <div class="productos_descripcion">
+                <div class="producto">
+                    <img class="producto" src="imagenes/glock1.png" data-title="Glock 17" data-description="Pistola de 9mm conocida por su fiabilidad y precisión. Es la pistola estándar de muchas fuerzas policiales y militares en todo el mundo." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/glock2.jpg" data-title="Glock 19" data-description="Versión compacta de la Glock 17, ideal para el porte oculto y uso táctico. Mantiene la misma fiabilidad y capacidad de disparo." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/glock3.png" data-title="Glock 26" data-description="Subcompacta de 9mm, perfecta para el porte oculto. Conocida por su facilidad de uso y precisión en un tamaño reducido." data-price="$950.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/glock4.jpg" data-title="Glock 21" data-description="Pistola de calibre .45 ACP, ofrece una gran capacidad de munición y fiabilidad. Utilizada frecuentemente en operaciones tácticas." data-price="$980.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/glock5.jpg" data-title="Glock 34" data-description="Versión de 9mm con cañón más largo, diseñada para competiciones de tiro y operaciones que requieren precisión adicional." data-price="$1000.00" onmouseover="cambiarContenido(this)">
+                </div>
+                <img id="arma_principal" class="arma_principal" src="imagenes/glock1.png">
+                <div class="descripcion">
+                    <h3 id="producto_titulo">PISTOLAS GLOCK</h3>
+                    <p id="producto_descripcion">Las Glock cuenta con un armazón de polímero resistente y duradero, lo que la hace ligera y fácil de manejar. Su diseño ergonómico se adapta cómodamente a la mano del usuario, brindando un agarre seguro y una sensación de confianza durante su uso.</p>
+                    <h2 id="producto_precio">$XX.XX</h2>
+                    <div>
+                        <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
+                        <label for="confirmar_compra">Deseo comprar este producto</label>
+                    </div>
+                    <button id="comprar_boton" onclick="redirigirCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

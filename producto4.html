@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+
+        <div class="carrito">
+            <span class="carrito-icono">🛒 Carrito de compra</span>
+            <div id="carrito_contenido"></div>
+        </div>
+
+    <!-- PRODUCTOS-->    
+    <section>
+        <h2 class="productos_titulo">CHALECO TACTICOS</h2>
+        <div class="productos_cuadro">
+            <div class="productos_descripcion">
+                <div class="producto">
+                    <img class="producto" src="imagenes/chaleco1.jpg" data-title="Chaleco Táctico 5.11 TacTec Plate Carrier" data-description="Chaleco modular que permite la inserción de placas balísticas. Ofrece comodidad y capacidad de carga para equipo adicional." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/chaleco2.jpg" data-title="Chaleco Condor Modular Operator Plate Carrier (MOPC)" data-description="Chaleco táctico ajustable con capacidad para placas balísticas y múltiples bolsillos para equipo." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/chaleco3.jpg" data-title="Chaleco Crye Precision JPC (Jumpable Plate Carrier)" data-description="Ligero y altamente ajustable, diseñado para operaciones aerotransportadas y otras misiones tácticas." data-price="$950.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/chaleco4.jpg" data-title="Chaleco Safariland Protech Tactical Vest" data-description="Chaleco con capacidad balística y opciones de modularidad para accesorios adicionales. Ideal para operaciones tácticas." data-price="$980.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/chaleco5.jpg" data-title="Chaleco AR500 Armor Veritas Plate Carrier" data-description="Chaleco económico y modular que ofrece protección balística y capacidad de personalización para diferentes misiones." data-price="$1000.00" onmouseover="cambiarContenido(this)">
+                </div>
+                <img id="arma_principal" class="arma_principal" src="imagenes/chaleco1.jpg">
+                <div class="descripcion">
+                    <h3 id="producto_titulo">Chalecos Tacticos</h3>
+                    <p id="producto_descripcion">Nuestros chalecos táctico militar es la elección perfecta para aquellos que buscan una solución completa para sus necesidades tácticas. Diseñado con los más altos estándares de calidad y funcionalidad, este chaleco proporciona la máxima protección y comodidad en cualquier situación.</p>
+                    <h2 id="producto_precio">$XX.XX</h2>
+                    <div>
+                        <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
+                        <label for="confirmar_compra">Deseo comprar este producto</label>
+                    </div>
+                    <button id="comprar_boton" onclick="redirigirCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

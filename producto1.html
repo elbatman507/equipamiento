@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+        
+        <div class="carrito">
+            <span class="carrito-icono">🛒 Carrito de compra</span>
+            <div id="carrito_contenido"></div>
+        </div>
+
+    <!-- PRODUCTOS-->    
+    <section>
+        <h2 class="productos_titulo">FUSILES</h2>
+        <div class="productos_cuadro">
+            <div class="productos_descripcion">
+                <div class="producto">
+                    <img class="producto" src="imagenes/fusil1.png" data-title="Fusil de Asalto M4 Carbine" data-description="Fusil de asalto estándar de las fuerzas armadas estadounidenses. Con un diseño compacto y capacidad de disparo semiautomático y automático." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/fusil2.jpg" data-title="Pistola Sig Sauer P320" data-description="Pistola modular con empuñadura intercambiable y un diseño ergonómico. Disponible en varios calibres y configuraciones." data-price="$900.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/fusil3.jpg" data-title="Ametralladora Ligera M249 SAW" data-description="Ametralladora ligera utilizada por las fuerzas armadas de Estados Unidos. Conocida por su alta cadencia de disparo y fiabilidad en combate." data-price="$950.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/fusil4.jpg" data-title="Fusil de Francotirador Barrett M82" data-description="Fusil de francotirador de calibre .50 BMG, conocido por su capacidad de penetración y largo alcance. Utilizado para objetivos a gran distancia." data-price="$980.00" onmouseover="cambiarContenido(this)">
+                    <img class="producto" src="imagenes/fusil5.jpg" data-title="Escopeta Mossberg 500" data-description="Escopeta de acción por bombeo popular entre las fuerzas policiales y militares. Conocida por su fiabilidad y versatilidad en combate cercano." data-price="$1000.00" onmouseover="cambiarContenido(this)">
+                </div>
+                <img id="arma_principal" class="arma_principal" src="imagenes/fusil1.png">
+                <div class="descripcion">
+                    <h3 id="producto_titulo">Fusiles de Asalto</h3>
+                    <p id="producto_descripcion">Nuestros Fusiles son conocido por su diseño compacto y su capacidad para disparar ráfagas automáticas. Su tamaño reducido y su peso ligero lo hacen adecuado para su uso en espacios reducidos y en situaciones de combate cercano. Además, su cargador de alta capacidad permite una mayor cantidad de disparos antes de tener que recargar.</p>
+                    <h2 id="producto_precio">$XX.XX</h2>
+                    <div>
+                        <input type="checkbox" id="confirmar_compra" name="confirmar_compra">
+                        <label for="confirmar_compra">Deseo comprar este producto</label>
+                    </div>
+                    <button id="comprar_boton" onclick="redirigirCompra()">Comprar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+
+
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

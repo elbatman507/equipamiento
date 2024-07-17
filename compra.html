@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipamiento Militar - Bryan Standard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- BARRA DE NAVEGACION-->
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Logo para la pagina-->
+            </div>
+        <div class="nav_lista">
+            <ul class="lista">
+                <li><a class="nav_title" href="#">Equipamiento Militar</a></li>
+                <li><a class="nav" href="index.html">Inicio</a></li>
+                <li><a class="nav" href="tienda.html">Tienda</a></li>
+                <li><a class="nav" href="contacto.html">Contacto</a></li>
+                <!-- icono de buscador-->
+            </ul>
+        </div>
+        </nav>
+
+        <h2 class="productos_titulo">METODO DE PAGO</h2>
+
+    <div class="compra">
+        <h2>Finalizar Compra</h2>
+        <div id="producto_compra"></div>
+        <form id="compra_form" onsubmit="finalizarCompra(event)">
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="direccion">Dirección:</label>
+            <input type="text" id="direccion" name="direccion" required>
+
+            <label for="pais">País:</label>
+            <input type="text" id="pais" name="pais" required>
+
+            <label>Método de Pago:</label>
+            <input type="radio" id="efectivo" name="metodo_pago" value="efectivo" onclick="mostrarTarjeta(false)" required>
+            <label for="efectivo">Efectivo</label>
+            <input type="radio" id="tarjeta" name="metodo_pago" value="tarjeta" onclick="mostrarTarjeta(true)" required>
+            <label for="tarjeta">Tarjeta de Crédito</label>
+
+            <div id="tarjeta_info" style="display: none;">
+                <label for="numero_tarjeta">Número de Tarjeta:</label>
+                <input type="text" id="numero_tarjeta" name="numero_tarjeta">
+
+                <label for="exp_date">Fecha de Expiración:</label>
+                <input type="text" id="exp_date" name="exp_date">
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+            </div>
+
+            <button type="submit">Finalizar Compra</button>
+        </form>
+    </div>
+
+    <p id="precio_total"></p> <!-- Aquí se mostrará el precio total -->
+    <footer>
+        <div class="footer">
+            Todos los derechos reservados - 2024
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
